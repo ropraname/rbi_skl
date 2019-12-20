@@ -24,7 +24,6 @@ class Menu_Screen(Screen):
         self.add_widget(bl)
 
     def on_press(self):
-        set_screen('m_box')
         #try:
            # camera = picamera.PiCamera(resolution=(1280, 720))
            # for i in range(3):
@@ -38,7 +37,7 @@ class Menu_Screen(Screen):
         #finally:
            # camera.close()
            # print("End of program")
-
+        for id_man in data:
 
 class Menu_of_box(Screen):
     def __init__(self, **kw):
