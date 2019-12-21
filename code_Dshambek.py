@@ -62,8 +62,26 @@ class Menu_of_box(Screen):
         gl.add_widget(Button(text="BOx_9", on_press=lambda x: self.on_press()))
         gl.add_widget(Button(text="НАЗАД", on_press=lambda x: self.on_press()))
         self.add_widget(gl)
-    def on_press(self):
-        self.qr_answer = 'key0'
+    def on_press(self, instance):
+        number = int(instance.text[-1])
+        if number == 1:
+            print(1)
+        if number == 2:
+            print(2)
+        if number == 3:
+            print(3)
+        if number == 4:
+            print(4)
+        if number == 5:
+            print (5)
+        if number == 6:
+            print(6)
+        if number == 7:
+            print(7)
+        if number == 8:
+            print(8)
+        if number == 9:
+            print(9)
         key_by_num(self.qr_answer, 'ничего')
         set_screen("menu")
         pass
@@ -76,7 +94,7 @@ class Regestration(Screen):
         gl.add_widget(Label(text="First Name: "))
         self.name1 = TextInput(multiline=False)
         print (self.name1.text)
-        self.name1.bind(text = self.on_text())
+        #self.name1.bind(text = self.on_text())
         gl.add_widget(self.name1)
         gl.add_widget(Label(text="Last Name: "))
         self.lastName = TextInput(multiline=False)
