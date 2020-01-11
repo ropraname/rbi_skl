@@ -34,7 +34,7 @@ class Menu_Screen(Screen):
         set_screen("m_box")
        #try:
            # camera = picamera.PiCamera(resolution=(1280, 720))
-           # for i in range(3):
+           # while True:
              #   sleep(1)
               #  camera.capture('qr_data.png')
                # self.data_qr = decode(Image.open('qr_data.png'))
@@ -42,6 +42,8 @@ class Menu_Screen(Screen):
                 #    self.data = str(self.data_qr[0][0][0:])[1:]
                # except:
                  #   print("no")
+                #if type(self.data) == str:
+                    #break
         #finally:
            # camera.close()
            # print("End of program")
